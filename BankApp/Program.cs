@@ -8,7 +8,7 @@ namespace BankApp
         {
             var a1 = new Account();
             a1.AccountNumber = 123456;
-            a1.Balance = 10000000000;
+            a1.Balance = 100000000;
         }
     }
 }
