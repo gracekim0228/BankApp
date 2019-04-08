@@ -4,6 +4,13 @@ using System.Text;
 
 namespace BankApp
 {
+    enum AccountType
+    {
+        Checking,
+        Savings,
+        CD,
+        Loan
+    }
     /// <summary>
     /// Account that represents
     /// bank account here you can
@@ -25,7 +32,7 @@ namespace BankApp
         /// </summary>
         public string EmailAddress { get; set; }
         public decimal Balance { get; private set; }
-        public string AccountType { get; set; }
+        public AccountType AccountType { get; set; }
         public DateTime CreatedDate { get; private set; }
         #endregion
 
